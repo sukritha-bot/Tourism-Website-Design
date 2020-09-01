@@ -1,0 +1,63 @@
+
+form{
+    background-color: lavender;
+    height: 100%;
+    width: 80%;
+    border-radius: 0.3cm;
+    border-style: ridge;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+h3{
+    margin-top: 1%;
+    margin-left: 40%;
+    color: black;
+    font-size: 300%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h6{
+    margin-left:8%;
+    color: olive;
+}
+table{
+    margin: 1% 1% 1% 1%;
+    width: 90%;
+    height: 100%;
+}
+td{
+    width: 20%;
+    height: 5%;
+}
+label{
+    color: slategray;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+.input_style{
+   margin-left: 8%;
+   border-radius: 0.6cm;
+   border-style: none;
+   height: 60%;
+   width: 70%;
+}
+.input_s_radio{
+    margin-left: 5%;
+   margin-top: 1%;
+   
+}
+.input_s_label{
+    margin-left: 0.5%;
+}
+button{
+   margin-left: 150px;
+   margin-top: 30px;
+   background-color:#f0f0f0;
+   border-radius: 1cm;
+  
+}
+p{
+    padding: 5%;
+}
+span{
+    margin-left: 8%;
+}

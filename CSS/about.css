@@ -1,0 +1,49 @@
+.div-style{
+    width: 80%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 10%;
+    border-style: groove;
+    border-radius: 0.6cm;
+}
+h3{
+    margin-top: 1%;
+    margin-left: 30%;
+    color: black;
+    font-size: 300%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.h3-style{
+    margin-left: 40%;
+}
+h5{
+    margin-top: 1%;
+    margin-left: 60%;
+    color: olive;
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    width: 80%;
+    height: 80%;
+    padding: 5%;
+    
+}
+.div-separate{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+textarea{
+    margin-top: 5%;
+    width: 90%;
+    height: 70%;
+    border-style: none;
+    background-color: lavender;
+}
+p{
+    float: left;
+    margin-top: 10%;
+    width: 90%;
+    height: 70%;
+    padding-left: 10%;  
+}

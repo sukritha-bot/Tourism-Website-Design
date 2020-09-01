@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Idukki</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/Style.css">
+    <link rel="stylesheet" href="/CSS/form.css">
+    
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed" >
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto navbar-left">
+                    <li class="nav-item active">
+                        <h2 class="h1-style">Paradise</h2>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto navbar-right">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tour.html">Tour</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <script defer src="/script/script.js"></script>
+    <div>
+        <form id="form" name="form" action="/HTML/tour.html" onsubmit="return Validation()" method="GET" >
+            <h3>Booking </h3>
+            <p>Find all the holiday packages of Idukki featured here on this portal. Our Idukki vacation packages offer comfortable stay at Idukki hotels, sightseeing and fun-filled activities. Buy Idukki tours and make the most of your vacation
+                <br>For advance booking a fee of 500/- is to be paid.</p>
+            <table>
+                <tr>
+                    <td><label for="fname">Full name</label></td>
+                    <td><input class="input_style" type="text" id="fname" name="fname" placeholder="Full name" required><br>
+                    <span id="fullname" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td><input class="input_s_radio" type="radio" id="m" name="gender" value="male">
+                        <label class="input_s_label" for="male">Male</label>
+                        <input class="input_s_radio" type="radio" id="f" name="gender" value="female">
+                        <label class="input_s_label"for="female">Female</label>
+                        <input class="input_s_radio" type="radio" id="o" name="gender" value="other">
+                        <label class="input_s_label"for="other">Other</label><br>
+                        <span id="genderspan" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input class="input_style" type="email" id="email" name="email" placeholder="Email  id" required><br>
+                        <span id="emailspan" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone no:</label></td>
+                    <td><input class="input_style" type="number" id="phone" name="phone" placeholder="Phone number" required><br>
+                    <span id="phoneNumber" class="text-danger"></span>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="address">Communication Address</label></td>
+                    <td><textarea class="input_style" id="address" name="address" cols="30" rows="5" placeholder="Communication Address" required></textarea><br>
+                        <span id="addressspan" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <td><h6>Details about number of persons and days for accomodation</h6></td>
+                </tr>
+                <tr>
+                    <td><label for="From">From</label></td>
+                    <td><input class="input_style" type="date" name="From" id="From" required><br>
+                        <span id="fromspan" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="To">To</label></td>
+                    <td><input class="input_style" type="date" name="To" id="To" required><br>
+                        <span id="tospan" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <td><label for="persons">No: of persons</label></td>
+                    <td><input class="input_s_radio" type="radio" id="one" name="persons" value="1">
+                        <label class="input_s_label"for="one">1</label>
+                        <input class="input_s_radio"type="radio" id="two" name="persons" value="2">
+                        <label class="input_s_label"for="two">2</label>
+                        <input class="input_s_radio"type="radio" id="three" name="persons" value="3">
+                        <label class="input_s_label"for="three">3</label>
+                        <input class="input_s_radio"type="radio" id="four" name="persons" value="4">
+                        <label class="input_s_label"for="four">4</label>
+                        <input class="input_s_radio"type="radio" id="five" name="persons" value="5">
+                        <label class="input_s_label"for="five">5</label>
+                        <input class="input_s_radio"type="radio" id="six" name="persons" value="6 or more">
+                        <label class="input_s_label"for="six">6 or more</label><br>
+                        <span id="personspan" class="text-danger"></span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit" onclick="Validate()">Submit</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+</body>
+</html>
